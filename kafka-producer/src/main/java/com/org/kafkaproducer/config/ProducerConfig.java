@@ -15,7 +15,7 @@ public class ProducerConfig {
 
     @Bean
     public NewTopic createTopic() {
-        return new NewTopic("my-topic6", 3, (short) 1);
+        return new NewTopic("my-topic10", 3, (short) 1);
     }
 
     @Bean
