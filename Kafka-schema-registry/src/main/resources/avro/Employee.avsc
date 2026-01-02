@@ -1,0 +1,25 @@
+{
+  "namespace": "com.org.kafkaschemaregistry.dto",
+  "type": "record",
+  "name": "Employee",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string"
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "email",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "age",
+      "type": "int"
+    }
+  ]
+}

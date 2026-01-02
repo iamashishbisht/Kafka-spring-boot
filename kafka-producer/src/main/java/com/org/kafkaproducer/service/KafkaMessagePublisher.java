@@ -34,7 +34,7 @@ public class KafkaMessagePublisher {
 
     public void sendMessageToTopic(Customer customer) {
         log.info("send customer details to topic {}", customer);
-        CompletableFuture<SendResult<String, Object>> completableFuture = kafkaTemplate.send("my-topic6", customer);
+        CompletableFuture<SendResult<String, Object>> completableFuture = kafkaTemplate.send("my-topic10", customer);
         completableFuture.whenComplete((result, ex) -> {
             if (ex == null) {
                 log.info("Sent Message =[" + customer + "] with offset=[" +
